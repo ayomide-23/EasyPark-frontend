@@ -1,0 +1,29 @@
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+  background: linear-gradient(to right, #e0f2f1, #f1f8e9);
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: green;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: green;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}

@@ -1,0 +1,159 @@
+.billing-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.billing-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+table.payment-grid {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+.payment-grid thead {
+  background-color: green;
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+.payment-grid thead th {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.payment-grid tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+.payment-grid tbody tr:hover {
+  background-color: #f0f4ff;
+}
+.payment-grid tbody td {
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+.payment-grid tbody td:last-child {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+td.status.confirmed {
+  color: green;
+  font-weight: bold;
+}
+td.status.pending {
+  color: orange;
+  font-weight: bold;
+}
+td.status.cancelled {
+  color: red;
+  font-weight: bold;
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.filters input[type="text"],
+.filters input[type="date"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.summary {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.status.Confirmed {
+  color: green;
+  font-weight: bold;
+}
+.status.Pending {
+  color: orange;
+  font-weight: bold;
+}
+.status.Cancelled {
+  color: red;
+  font-weight: bold;
+}
+.export-btn {
+  padding: 8px 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.export-btn:hover {
+  background-color: #006400;
+}
+@media (max-width: 768px) {
+  .payment-grid thead {
+    display: none;
+  }
+
+  .payment-grid,
+  .payment-grid tbody,
+  .payment-grid tr,
+  .payment-grid td {
+    display: block;
+    width: 100%;
+  }
+
+  .payment-grid tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+  .payment-grid td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .payment-grid td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+    flex-basis: 50%;
+  }
+}
+.mobile-sort {
+  display: none;
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .mobile-sort {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .mobile-sort label {
+    font-weight: bold;
+  }
+
+  .mobile-sort select {
+    padding: 5px;
+    font-size: 14px;
+  }
+}

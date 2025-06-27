@@ -1,0 +1,49 @@
+.notifications-container {
+  padding: 2rem;
+}
+
+.filter-bar {
+  margin-bottom: 1rem;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notification-card {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-left: 5px solid #999;
+  border-radius: 8px;
+  position: relative;
+}
+
+.notification-card.unread {
+  border-left-color: green;
+  background-color: #ACE1AF;
+}
+
+.notification-card.read {
+  border-left-color: green;
+  background-color: #ACE1AF;
+}
+
+.notification-card .message {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.notification-card .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.notification-card button {
+  background: none;
+  border: 1px solid #444;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

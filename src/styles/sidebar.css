@@ -1,0 +1,147 @@
+.sidebar-container{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    height: 100vh;
+    width: 230px;
+}
+.sidebar-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.sidebar-list{
+    margin-top: -100px;
+    list-style: none;
+    padding: 5px;
+}
+.sidebar-list a{
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+.sidebar-list li{
+    margin: 30px;
+}
+.sidebar-list li.active a,
+.sidebar-list a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+.toggle-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+.slider:before {
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: green;
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+.toggle-label{
+    font-size: 14px;
+}
+body.dark-mode{
+    background-color: #121212;
+    color: #f0f0f0;
+}
+body.dark-mode .sidebar-container{
+    background-color: #1a1a2e;
+}
+
+.sidebar-list li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Mobile: Always collapsed look */
+ @media (max-width: 768px) {
+  .sidebar-container {
+    width: 70px;
+    padding: 10px 5px;
+  }
+
+  .sidebar-container .sidebar-title,
+  .sidebar-container .toggle-label, .log,
+  .sidebar-container .sidebar-list a span {
+    display: none;
+  }
+
+  .sidebar-container .sidebar-icon{
+    margin: 0 auto;
+  }
+  .sidebar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  
+} 
+.icon-wrapper{
+  position: relative;
+  display: inline-block;
+}
+
+.notif-badge{
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: green;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .notif-badge {
+    position: static;
+    margin-left: 6px;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 8px;
+  }
+}
