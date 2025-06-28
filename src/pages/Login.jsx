@@ -25,7 +25,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('https://easypark.atwebpages.com/login.php', {
+      const response = await fetch('http://easypark.atwebpages.com/login.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

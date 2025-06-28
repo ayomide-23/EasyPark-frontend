@@ -8,7 +8,7 @@ const ForgotPasswordModal = ({ isOpen, onClose }) => {
   const [step, setStep] = useState(1);
 
   const handleEmailSubmit = async () => {
-    const res = await fetch('https://easypark.atwebpages.com/checkuseremail.php', {
+    const res = await fetch('http://easypark.atwebpages.com/checkuseremail.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ email }),
@@ -23,7 +23,7 @@ const ForgotPasswordModal = ({ isOpen, onClose }) => {
   };
 
   const handleReset = async () => {
-    const res = await fetch('https://easypark.atwebpages.com/reset_password.php', {
+    const res = await fetch('http://easypark.atwebpages.com/reset_password.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ email, new_password: newPassword }),

@@ -13,7 +13,7 @@ const UserDashboard = () => {
     navigate("/login");
     return;
   }
-  fetch('https://easypark.atwebpages.com/fetch_details.php',{
+  fetch('http://easypark.atwebpages.com/fetch_details.php',{
     headers:{
       Authorization: `Bearer ${token}`,
     },

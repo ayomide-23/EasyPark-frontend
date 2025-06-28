@@ -14,7 +14,7 @@ const Payment = () => {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    fetch("https://easypark.atwebpages.com/fetch_payments.php", {
+    fetch("http://easypark.atwebpages.com/fetch_payments.php", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
