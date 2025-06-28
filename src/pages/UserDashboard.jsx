@@ -44,7 +44,7 @@ const UserDashboard = () => {
           <p><strong>Phone:</strong>{userdata.phone}</p>
           <p><strong>Vehcile Number:</strong>{userdata.vehicleno}</p>
           <p><strong>Vehicle Type:</strong>{userdata.vehicletype}</p>
-          <p><strong>Vehicle Color:</strong>{userdata.vehiclecol}</p>
+          <p><strong>Vehicle Colour:</strong>{userdata.vehiclecol}</p>
           <p><strong>Time created:</strong>{userdata.created_at}</p>
         </div>
       )}
