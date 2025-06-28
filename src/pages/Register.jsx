@@ -27,7 +27,7 @@ function Register() {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost/PMS/register.php", {
+    const response = await fetch("http://easypark.atwebpages.com/register.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

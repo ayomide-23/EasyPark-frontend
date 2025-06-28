@@ -11,7 +11,7 @@ const SlotGrid = () => {
 
   useEffect(() => {
     // Fetch slots
-    fetch('http://localhost/PMS/fetch_slots.php')
+    fetch('http://easypark.atwebpages.com/fetch_slots.php')
       .then(res => res.json())
       .then(data => {
         console.log('Slots fetched:', data); 
@@ -31,7 +31,7 @@ const SlotGrid = () => {
       return;
     }
     // fetch user detials
-    fetch('http://localhost/PMS/fetch_details.php', {
+    fetch('http://easypark.atwebpages.com/fetch_details.php', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

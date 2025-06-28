@@ -44,13 +44,13 @@ const BookingModal = ({ slot, onClose, user }) => {
 
    const handlePaystackSuccess = async (reference) => {
     try {
-      const res = await fetch("http://localhost/PMS/update_status.php", {
+      const res = await fetch("http://easypark.atwebpages.com/update_status.php", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ slot_number: slot.slot_number }),
       });
       
-   await fetch("http://localhost/PMS/store_bookings.php", {
+   await fetch("http://easypark.atwebpages.com/store_bookings.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
