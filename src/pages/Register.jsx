@@ -120,7 +120,7 @@ function Register() {
           value={formData.vehicletype}
           onChange={handleChange}
           required>
-          <option value="disable selected hidden">Select vehicle type</option>
+          <option value="" disabled hidden>Select vehicle type</option>
           <option value="car">Car</option>
           <option value="bus">Bus</option>
           <option value="motorcycle">Motorcycle</option>
