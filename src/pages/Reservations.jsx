@@ -10,7 +10,7 @@ const Reservations = () => {
     const token = localStorage.getItem('token');
     if (!token) return;
 
-    fetch('http://easypark.atwebpages.com/reservations.php', {
+    fetch('https://parkeasy.ct.ws/reservations.php', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -29,7 +29,7 @@ const Reservations = () => {
   if (!confirm) return;
 
   try {
-    const res = await fetch('http://easypark.atwebpages.com/cancel_booking.php', {
+    const res = await fetch('https://parkeasy.ct.ws/cancel_booking.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ booking_id: bookingId })

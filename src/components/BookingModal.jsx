@@ -8,12 +8,12 @@ const BookingModal = ({ slot, onClose, user }) => {
   const [price, setPrice] = useState(0);
 
   const vehicleFees = {
-    car: 100,
-    truck: 200,
-    motorcycle: 50,
-    bus:150,
-    van: 200,
-    bicycle: 20
+    car: 700,
+    truck: 1200,
+    motorcycle: 400,
+    bus:900,
+    van: 800,
+    bicycle: 300
   };
 
   const baseSlotFee = 500;
@@ -44,13 +44,13 @@ const BookingModal = ({ slot, onClose, user }) => {
 
    const handlePaystackSuccess = async (reference) => {
     try {
-      const res = await fetch("http://easypark.atwebpages.com/update_status.php", {
+      const res = await fetch("https://parkeasy.ct.ws/update_status.php", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ slot_number: slot.slot_number }),
       });
       
-   await fetch("http://easypark.atwebpages.com/store_bookings.php", {
+   await fetch("https://parkeasy.ct.ws/store_bookings.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({
