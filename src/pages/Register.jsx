@@ -27,7 +27,7 @@ function Register() {
   e.preventDefault();
 
   try {
-    const response = await fetch("https://parkeasy.ct.ws/register.php", {
+    const response = await fetch("https://easypark-backend-2toe.onrender.com/register.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

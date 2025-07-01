@@ -11,7 +11,7 @@ const SlotGrid = () => {
 
   useEffect(() => {
     // Fetch slots
-    fetch('https://parkeasy.ct.ws/fetch_slots.php')
+    fetch('https://easypark-backend-2toe.onrender.com/fetch_slots.php')
       .then(res => res.json())
       .then(data => {
         console.log('Slots fetched:', data); 
@@ -31,7 +31,7 @@ const SlotGrid = () => {
       return;
     }
     // fetch user detials
-    fetch('https://parkeasy.ct.ws/fetch_details.php', {
+    fetch('https://easypark-backend-2toe.onrender.com/fetch_details.php', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

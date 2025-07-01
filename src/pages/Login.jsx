@@ -25,7 +25,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('https://parkeasy.ct.ws/login.php', {
+      const response = await fetch('https://easypark-backend-2toe.onrender.com/login.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

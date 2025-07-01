@@ -14,7 +14,7 @@ const Payment = () => {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    fetch("https://parkeasy.ct.ws/fetch_payments.php", {
+    fetch("https://easypark-backend-2toe.onrender.com/fetch_payments.php", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -9,7 +9,7 @@ const Notifications = () => {
   const fetchNotifications = () => {
     const token = localStorage.getItem('token');
     if (!token) return;
-    fetch('https://parkeasy.ct.ws/fetch_notifications.php', {
+    fetch('https://easypark-backend-2toe.onrender.com/fetch_notifications.php', {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then(res => res.json())
@@ -29,7 +29,7 @@ const Notifications = () => {
 
   const handleMarkAsRead = async (id) => {
     try {
-      await fetch('https://parkeasy.ct.ws/mark_notifications.php', {
+      await fetch('https://easypark-backend-2toe.onrender.com/mark_notifications.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({ id }),
@@ -48,7 +48,7 @@ const Notifications = () => {
     if (!confirm) return;
 
     try {
-      await fetch('https://parkeasy.ct.ws/delete_notification.php', {
+      await fetch('https://easypark-backend-2toe.onrender.com/delete_notification.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({ id }),

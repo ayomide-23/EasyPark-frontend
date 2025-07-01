@@ -44,13 +44,13 @@ const BookingModal = ({ slot, onClose, user }) => {
 
    const handlePaystackSuccess = async (reference) => {
     try {
-      const res = await fetch("https://parkeasy.ct.ws/update_status.php", {
+      const res = await fetch("https://easypark-backend-2toe.onrender.com/update_status.php", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ slot_number: slot.slot_number }),
       });
       
-   await fetch("https://parkeasy.ct.ws/store_bookings.php", {
+   await fetch("https://easypark-backend-2toe.onrender.com/store_bookings.php", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({

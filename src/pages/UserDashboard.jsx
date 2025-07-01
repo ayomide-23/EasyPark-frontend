@@ -13,7 +13,7 @@ const UserDashboard = () => {
     navigate("/login");
     return;
   }
-  fetch('https://parkeasy.ct.ws/fetch_details.php',{
+  fetch('https://easypark-backend-2toe.onrender.com/fetch_details.php',{
     headers:{
       Authorization: `Bearer ${token}`,
     },
