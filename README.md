@@ -1,75 +1,85 @@
-<<<<<<< HEAD
-# EasyPark
-This a parking management app where users can register or log in. This is the frontend repository.
-=======
-# Getting Started with Create React App
+# 🚗 EasyPark - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-green?style=for-the-badge&logo=vercel)](https://easy-park-frontend-aderinto-ayomides-projects.vercel.app)
+[![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)]
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+> 🎯 A user-focused Parking Management System frontend built with React. Allows real-time parking slot bookings, payment via Paystack, history tracking, and more.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌍 Live Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 [EasyPark](https://easy-park-frontend-aderinto-ayomides-projects.vercel.app)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📸 Screenshots
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔐 Landing page
+![Landing](./screenshots/landingpage.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📊 User Dashboard
+![Dashboard](./screenshots/userdashboard.jpg)
 
-### `npm run eject`
+### 💳 Booking Modal (Paystack)
+![Booking Modal](./screenshots/paystackmodal.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🧾 Payment History
+![History](./screenshots/paymentpage.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## ⚙️ Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ⚛️ React (CRA)
+- 🎨 Custom CSS
+- 💳 Paystack (via `react-paystack`)
+- 🔒 LocalStorage (for tokens)
+- 🛰️ API Integrated via Fetch
+- 📲 Mobile Responsive
+- 🚀 Hosted on [Vercel](https://vercel.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧠 Key Features
 
-### Analyzing the Bundle Size
+- ✅ User registration and login
+- ✅ Token-based authentication
+- ✅ Real-time slot availability display
+- ✅ Booking modal with Paystack integration
+- ✅ Booking cancellation & history tracking
+- ✅ Billing summary + search + pagination
+- ✅ Notification system with read/unread
+- ✅ Mobile responsive layout
+- ✅ Admin dashboard (coming soon 🚧)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
+## 🙌 Acknowledgements
+[built from scratch by @ayomide-23](https://github.com/ayomde-23) 
 
-### Making a Progressive Web App
+## 🛠️ How To Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 46f8ca8 (initial commit for frontend)
+1. **Clone the repo**
+```bash
+git clone https://github.com/ayomide-23/EasyPark-frontend.git
+cd EasyPark-frontend
+```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Set environment variable**
+   ```bash
+   REACT_APP_PAYSTACK_PUBLIC_KEY=your_public_key_here
+   ```
+5. **Start the sever**
+   ```bash
+   npm start
+   ```
