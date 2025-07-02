@@ -28,7 +28,7 @@ const BookingModal = ({ slot, onClose, user }) => {
 
   console.log(
     email,
-    amount,
+    price,
     publicKey
   );
   const componentProps = {

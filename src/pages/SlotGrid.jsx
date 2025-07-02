@@ -68,7 +68,7 @@ const SlotGrid = () => {
             onClick={() => handleSlotClick(slot)}
           >
             <span style={{display: 'block'}}>{slot.slot_number}</span>
-            <span style={{display: 'blocked', marginTop: '5px', }}>
+            <span style={{display: 'block', marginTop: '5px', }}>
               {slot.booked ? "Booked" : "Available"}</span>
           </div>
         ))
