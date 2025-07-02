@@ -26,6 +26,11 @@ const BookingModal = ({ slot, onClose, user }) => {
   const email = user?.email; 
   const publicKey = process.env.REACT_APP_PAYSTACK_PUBLIC_KEY;
 
+  console.log(
+    email,
+    amount,
+    publicKey
+  );
   const componentProps = {
     email,
     amount: price * 100, 
@@ -103,7 +108,7 @@ const BookingModal = ({ slot, onClose, user }) => {
         <p><strong>Total: NGN{price}</strong></p>
 
         {vehicleType && hours > 0 && (
-          <PaystackButton className="paystack-button" {...componentProps} onSuccess={handlePaystackSuccess} />
+          <PaystackButton className="paystack-button" {...componentProps} />
         )}
 
         <button className="close-btn" onClick={onClose}>Cancel</button>
